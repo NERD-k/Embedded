@@ -8,7 +8,7 @@
 
 // #define _nop_() __asm NOP __endasm
 
-void mian(void){
+void main(void){
     // 变量声明
     while(1){
         // 程序
