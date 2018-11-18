@@ -1,0 +1,15 @@
+# MCU
+*.exe
+Example/
+Todo/
+
+# Keil file
+Project/**/*.A51
+Project/**/*.bak
+Project/**/*.uvgui.*
+Project/**/*.uvopt
+Project/**/*.uvproj
+Project/**/Listings
+Project/**/Objects
+
+backup/*
