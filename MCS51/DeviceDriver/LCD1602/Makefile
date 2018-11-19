@@ -1,7 +1,5 @@
 CC		= sdcc
 
-project := $(shell mkdir listings && mkdir objects)
-
 all: main.bin
 
 main.bin:main.ihx
@@ -15,4 +13,5 @@ main.rel:main.c
 
 .PHONY:clean
 clean:
-		rm -r ./listings ./objects
+		rm -r main.lst main.sym main.rel main.asm \
+		main.mem main.map main.rst main.lk main.ihx main.bin
