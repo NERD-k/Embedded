@@ -1,12 +1,5 @@
 CC		= sdcc
 
-TOP_DIR := ${CURDIR}
-LISTING_DIR := $(TOP_DIR)/listings
-OBJECT_DIR := $(TOP_DIR)/objects
-OUTPUT_DIR := $(TOP_DIR)/output
-
-init := $(shell mkdir listings objects output)
-
 all: main.bin
 
 main.bin:main.ihx
@@ -20,4 +13,5 @@ main.rel:main.c
 
 .PHONY:clean
 clean:
-		rm -rf $(LISTING_DIR) $(OBJECT_DIR) $(OUTPUT_DIR)
+		rm -r main.lst main.sym main.rel main.asm \
+		main.mem main.map main.rst main.lk main.ihx main.bin
