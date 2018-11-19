@@ -3,7 +3,19 @@
 Example/
 Todo/
 
-# Keil file
+# SDCC compile file
+MCS51/**/*.asm
+MCS51/**/*.lst
+MCS51/**/*.sym
+MCS51/**/*.rel
+MCS51/**/*.mem
+MCS51/**/*.map
+MCS51/**/*.rst
+MCS51/**/*.lk
+MCS51/**/*.ihx
+MCS51/**/*.bin
+
+# Keil compile file
 Project/**/*.A51
 Project/**/*.bak
 Project/**/*.uvgui.*
